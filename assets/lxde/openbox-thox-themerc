@@ -1,0 +1,18 @@
+# ThoxOS Mini - Openbox theme (install to ~/.themes/ThoxOSMini/openbox-3/themerc)
+window.active.title.bg.color: #11161C
+window.inactive.title.bg.color: #0B0F14
+window.active.label.text.color: #00FFA3
+window.inactive.label.text.color: #6B7785
+window.active.border.color: #00FFA3
+window.inactive.border.color: #1A232C
+window.active.button.unpressed.image.color: #00FFA3
+window.inactive.button.unpressed.image.color: #6B7785
+menu.items.bg.color: #11161C
+menu.items.text.color: #F2F6F9
+menu.items.active.bg.color: #00FFA3
+menu.items.active.text.color: #0B0F14
+menu.title.bg.color: #0B0F14
+menu.title.text.color: #00FFA3
+border.width: 2
+padding.width: 6
+window.handle.width: 0

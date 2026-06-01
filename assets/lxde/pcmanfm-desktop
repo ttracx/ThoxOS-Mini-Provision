@@ -1,0 +1,9 @@
+# ThoxOS Mini desktop -> ~/.config/pcmanfm/LXDE/desktop-items-0.conf
+[*]
+wallpaper_mode=stretch
+wallpaper=/usr/share/backgrounds/thoxos-mini-wallpaper.png
+desktop_bg=#0B0F14
+desktop_fg=#F2F6F9
+desktop_shadow=#000000
+show_wm_menu=0
+sort=mtime;ascending;

@@ -1,0 +1,4 @@
+# Appended/overlaid onto /etc/os-release by the provisioner (PRETTY_NAME only).
+PRETTY_NAME="ThoxOS Mini (Debian 11 LXDE)"
+THOX_VARIANT="mini"
+THOX_BASE="debian-11-lxde-arm64"

@@ -1,0 +1,5 @@
+
+  ThoxOS Mini  -  Edge AI thin client  (Debian 11 LXDE, ARM64)
+  Resize display:  xrandr-thox-autoresize   (or xrandr --output Virtual-1 --auto)
+  Companion pairing over MeshStack/LAN.  Privacy-first: nothing leaves the mesh in plaintext.
+

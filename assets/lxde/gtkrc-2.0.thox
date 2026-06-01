@@ -1,0 +1,19 @@
+# ThoxOS Mini GTK2 accent overlay (sourced after the base dark theme).
+style "thox-default" {
+  fg[NORMAL]      = "#F2F6F9"
+  fg[PRELIGHT]    = "#FFFFFF"
+  fg[SELECTED]    = "#0B0F14"
+  fg[ACTIVE]      = "#F2F6F9"
+  fg[INSENSITIVE] = "#6B7785"
+  bg[NORMAL]      = "#11161C"
+  bg[PRELIGHT]    = "#1A232C"
+  bg[SELECTED]    = "#00FFA3"
+  bg[ACTIVE]      = "#0B0F14"
+  bg[INSENSITIVE] = "#0B0F14"
+  base[NORMAL]    = "#0B0F14"
+  base[SELECTED]  = "#00FFA3"
+  base[ACTIVE]    = "#00FFA3"
+  text[NORMAL]    = "#F2F6F9"
+  text[SELECTED]  = "#0B0F14"
+}
+class "GtkWidget" style "thox-default"

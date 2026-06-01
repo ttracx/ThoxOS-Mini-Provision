@@ -1,0 +1,8 @@
+/* ThoxOS Mini GTK3 accent overlay. Drop into ~/.config/gtk-3.0/gtk.css */
+@define-color thox_emerald #00FFA3;
+@define-color thox_graphite #0B0F14;
+@define-color thox_slate #11161C;
+@define-color thox_white #F2F6F9;
+*:selected, *:focus { background-color: @thox_emerald; color: @thox_graphite; }
+selection { background-color: @thox_emerald; color: @thox_graphite; }
+.titlebar, headerbar { background-color: @thox_slate; color: @thox_white; }

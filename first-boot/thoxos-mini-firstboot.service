@@ -1,0 +1,20 @@
+# ThoxOS Mini first-boot provisioning unit.
+# Install: copy provision payload to /opt/thoxos-mini, copy this unit to
+#   /etc/systemd/system/thoxos-mini-firstboot.service, then:
+#   systemctl enable thoxos-mini-firstboot.service
+# It runs once (guarded by the stamp file) and applies the ThoxOS Mini layer.
+# Provide credentials via /etc/thoxos-mini.env (THOX_ROOT_PW=, THOX_USER_PW=)
+# or it will require them; for a lab VM set THOX_KEEP_PW=1 there.
+[Unit]
+Description=ThoxOS Mini first-boot provisioning
+After=multi-user.target
+ConditionPathExists=!/var/lib/thoxos-mini/.provisioned
+
+[Service]
+Type=oneshot
+EnvironmentFile=-/etc/thoxos-mini.env
+ExecStart=/bin/bash -lc '/opt/thoxos-mini/provision-thoxos-mini.sh ${THOX_KEEP_PW:+--keep-passwords} && mkdir -p /var/lib/thoxos-mini && touch /var/lib/thoxos-mini/.provisioned'
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

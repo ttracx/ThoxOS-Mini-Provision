@@ -1,0 +1,6 @@
+# ThoxOS Mini LXDE autostart -> /etc/xdg/lxsession/LXDE/autostart
+@xrandr-thox-autoresize
+@spice-vdagent
+@pcmanfm --desktop --profile LXDE
+@lxpanel --profile LXDE
+@openbox --reconfigure
